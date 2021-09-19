@@ -1,0 +1,4 @@
+rootProject.name = 'mbt_bot'
+include 'Commands'
+include 'mbt.mbtbot'
+
