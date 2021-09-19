@@ -31,7 +31,7 @@ public class Main extends ListenerAdapter {
     public static String prefix = "!";
 
     public static void main(String[] args) throws LoginException {
-        JDA jda = JDABuilder.createDefault("ODg0NDg4NDc5Nzc2NTc5NjE0.YTZOFg.nNgwUeLO2AnRGvvd1KB_Y_NgjTY").build();
+        JDA jda = JDABuilder.createDefault("bot token").build();
 
        jda.addEventListener(new Ban());
        jda.addEventListener(new Mute());
@@ -39,7 +39,8 @@ public class Main extends ListenerAdapter {
 
     }
 
-    //none of this code works
+    //this code works to play music, only currently supporting direct links
+    //TODO: add support for yt:{query} somehow to make it possible to use only titles w/o links
 
     private final AudioPlayerManager playerManager;
     private final Map<Long, GuildMusicManager> musicManagers;
